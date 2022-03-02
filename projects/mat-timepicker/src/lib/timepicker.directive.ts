@@ -36,16 +36,17 @@ export interface MatTimepickerButtonTemplateContext {
 }
 
 @Directive({
+  // eslint-disable-next-line @angular-eslint/directive-selector
   selector: 'input[matTimepicker]',
   providers: [
     { provide: MatFormFieldControl, useExisting: MatTimepickerDirective }
   ],
-  // tslint:disable-next-line:no-host-metadata-property
+  // eslint-disable-next-line @angular-eslint/no-host-metadata-property
   host: {
     /**
      * @breaking-change 8.0.0 remove .mat-form-field-autofill-control in favor of AutofillMonitor.
      */
-    // tslint:disable-next-line:object-literal-key-quotes
+    // eslint-disable-next-line quote-props
     'class': 'mat-input-element mat-form-field-autofill-control',
     '[class.mat-input-server]': '_isServer',
     // Native input properties that are overwritten by Angular inputs need to be synced with
@@ -71,10 +72,10 @@ export class MatTimepickerDirective implements
   static nextId = 0;
 
   /** Whether the component is being rendered on the server. */
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   readonly _isServer: boolean;
 
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   _errorState = false;
   get errorState() {
     const oldState = this._errorState;
@@ -107,23 +108,23 @@ export class MatTimepickerDirective implements
       this.stateChanges.next();
     }
   }
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   protected _disabled = false;
 
   @Input() get id(): string { return this._id; }
   set id(value: string) { this._id = value || this._uid; }
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   protected _id: string;
 
   @Input() get readonly(): boolean { return this._readonly; }
   set readonly(value: boolean) { this._readonly = coerceBooleanProperty(value); }
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   private _readonly = false;
 
   private isAlive: Subject<any> = new Subject<any>();
   stateChanges = new Subject<void>();
 
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   protected _uid = `mat-time-picker-${MatTimepickerDirective.nextId++}`;
   @HostBinding('class.floating') get shouldLabelFloat() { return this.focused || !this.empty; }
   @HostBinding('attr.aria-describedby') describedBy = '';
@@ -138,7 +139,7 @@ export class MatTimepickerDirective implements
     this._required = coerceBooleanProperty(req);
     this.stateChanges.next();
   }
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   private _required = false;
 
   @Input() get placeholder() {
@@ -148,7 +149,7 @@ export class MatTimepickerDirective implements
     this._placeholder = plh;
     this.stateChanges.next();
   }
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   private _placeholder: string;
 
   focused = false;
@@ -186,14 +187,14 @@ export class MatTimepickerDirective implements
   @Input() minDate: Date;
   @Input() maxDate: Date;
 
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   private _isPm: boolean;
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   private _value: Date;
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   private _formattedValueString: string;
 
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   private _skipValueChangeEmission = true;
 
   @Input() set value(value: Date) {
@@ -346,15 +347,15 @@ export class MatTimepickerDirective implements
     private fm: FocusMonitor,
     private elRef: ElementRef<HTMLElement>,
     private ngZone: NgZone,
-    // tslint:disable-next-line:variable-name
+    // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
     protected _platform: Platform,
-    // tslint:disable-next-line:variable-name
+    // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
     @Optional() private _parentForm: NgForm,
-    // tslint:disable-next-line:variable-name
+    // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
     @Optional() private _matFormFiled: MatFormField,
-    // tslint:disable-next-line:variable-name
+    // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
     @Optional() private _parentFormGroup: FormGroupDirective,
-    // tslint:disable-next-line:variable-name
+    // eslint-disable-next-line @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match
     _defaultErrorStateMatcher: ErrorStateMatcher,
   ) {
     this.id = this.id;

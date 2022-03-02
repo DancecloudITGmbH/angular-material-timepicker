@@ -5,6 +5,7 @@ import { twoDigits, convertHoursForMode } from '../util';
 import { MatTimepickerButtonTemplateContext } from '../timepicker.directive';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'mat-timepicker-dialog',
   templateUrl: './timepicker-dialog.component.html',
   styleUrls: ['./timepicker-dialog.component.scss']
@@ -56,11 +57,11 @@ export class MatTimepickerComponentDialogComponent implements DoCheck {
   minDate: Date;
   maxDate: Date;
 
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   _formattedHour: any;
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   _hours: any;
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match
   _value: Date;
 
   set hours(value: any) {

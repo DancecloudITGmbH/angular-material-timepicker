@@ -3,6 +3,7 @@ import { ClockViewType, ClockNumber, ITimeData, ClockMode } from '../interfaces-
 import { isAllowed, getIsAvailabeFn } from '../util';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'mat-clock',
   templateUrl: './clock.component.html',
   styleUrls: ['./clock.component.scss'],

@@ -111,15 +111,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         },
@@ -167,19 +163,19 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/mat-timepicker/tsconfig.lib.json",
-              "projects/mat-timepicker/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/mat-timepicker/**/*.ts",
+              "projects/mat-timepicker/**/*.html"
             ]
           }
         }
       }
     }
   },
-  "defaultProject": "angular-material-timepicker"
+  "defaultProject": "angular-material-timepicker",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
