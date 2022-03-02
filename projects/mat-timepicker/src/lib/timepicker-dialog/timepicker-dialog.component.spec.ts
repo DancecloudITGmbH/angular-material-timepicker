@@ -1,17 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatTimepickerComponentDialogComponent } from './timepicker-dialog.component';
 
 describe('TimePickerComponent', () => {
   let component: MatTimepickerComponentDialogComponent;
   let fixture: ComponentFixture<MatTimepickerComponentDialogComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [MatTimepickerComponentDialogComponent]
-    })
-      .compileComponents();
-  }));
+    }).compileComponents();
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MatTimepickerComponentDialogComponent);
