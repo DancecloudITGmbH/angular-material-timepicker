@@ -121,7 +121,7 @@ export class MatTimepickerDirective implements
   // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   private _readonly = false;
 
-  private isAlive: Subject<any> = new Subject<any>();
+  private isAlive = new Subject<void>();
   stateChanges = new Subject<void>();
 
   // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
