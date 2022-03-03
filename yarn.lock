@@ -1612,15 +1612,15 @@
   dependencies:
     "@types/node" "*"
 
-"@types/jasmine@*", "@types/jasmine@~3.5.0":
-  "integrity" "sha512-3F8qpwBAiVc5+HPJeXJpbrl+XjawGmciN5LgiO7Gv1pl1RHtjoMNqZpqEksaPJW05ViKe8snYInRs6xB25Xdew=="
-  "resolved" "https://registry.npmjs.org/@types/jasmine/-/jasmine-3.5.10.tgz"
-  "version" "3.5.10"
+"@types/jasmine@*", "@types/jasmine@~3.10.3":
+  "integrity" "sha512-SWyMrjgdAUHNQmutvDcKablrJhkDLy4wunTme8oYLjKp41GnHGxMRXr2MQMvy/qy8H3LdzwQk9gH4hZ6T++H8g=="
+  "resolved" "https://registry.npmjs.org/@types/jasmine/-/jasmine-3.10.3.tgz"
+  "version" "3.10.3"
 
-"@types/jasminewd2@~2.0.3":
-  "integrity" "sha512-d9p31r7Nxk0ZH0U39PTH0hiDlJ+qNVGjlt1ucOoTUptxb2v+Y5VMnsxfwN+i3hK4yQnqBi3FMmoMFcd1JHDxdg=="
-  "resolved" "https://registry.npmjs.org/@types/jasminewd2/-/jasminewd2-2.0.8.tgz"
-  "version" "2.0.8"
+"@types/jasminewd2@~2.0.10":
+  "integrity" "sha512-J7mDz7ovjwjc+Y9rR9rY53hFWKATcIkrr9DwQWmOas4/pnIPJTXawnzjwpHm3RSxz/e3ZVUvQ7cRbd5UQLo10g=="
+  "resolved" "https://registry.npmjs.org/@types/jasminewd2/-/jasminewd2-2.0.10.tgz"
+  "version" "2.0.10"
   dependencies:
     "@types/jasmine" "*"
 
@@ -4617,10 +4617,15 @@
     "filelist" "^1.0.1"
     "minimatch" "^3.0.4"
 
-"jasmine-core@^3.5.0", "jasmine-core@>=3.5", "jasmine-core@~3.5.0":
-  "integrity" "sha512-nCeAiw37MIMA9w9IXso7bRaLl+c/ef3wnxsoSAlYrzS+Ot0zTG6nU8G/cIfGkqpkjX2wNaIW9RFG0TwIFnG6bA=="
-  "resolved" "https://registry.npmjs.org/jasmine-core/-/jasmine-core-3.5.0.tgz"
-  "version" "3.5.0"
+"jasmine-core@^3.6.0":
+  "integrity" "sha512-Hu1dmuoGcZ7AfyynN3LsfruwMbxMALMka+YtZeGoLuDEySVmVAPaonkNoBRIw/ectu8b9tVQCJNgp4a4knp+tg=="
+  "resolved" "https://registry.npmjs.org/jasmine-core/-/jasmine-core-3.99.1.tgz"
+  "version" "3.99.1"
+
+"jasmine-core@^4.0.1", "jasmine-core@>=3.8":
+  "integrity" "sha512-w+JDABxQCkxbGGxg+a2hUVZyqUS2JKngvIyLGu/xiw2ZwgsoSB0iiecLQsQORSeaKQ6iGrCyWG86RfNDuoA7Lg=="
+  "resolved" "https://registry.npmjs.org/jasmine-core/-/jasmine-core-4.0.1.tgz"
+  "version" "4.0.1"
 
 "jasmine-core@~2.8.0":
   "integrity" "sha1-vMl5rh+f0FcB5F5S5l06XWPxok4="
@@ -4787,7 +4792,7 @@
   dependencies:
     "which" "^1.2.1"
 
-"karma-coverage-istanbul-reporter@~3.0.2":
+"karma-coverage-istanbul-reporter@~3.0.3":
   "integrity" "sha512-wE4VFhG/QZv2Y4CdAYWDbMmcAHeS926ZIji4z+FkB2aF/EposRb6DP6G5ncT/wXhqUfAb/d7kZrNKPonbvsATw=="
   "resolved" "https://registry.npmjs.org/karma-coverage-istanbul-reporter/-/karma-coverage-istanbul-reporter-3.0.3.tgz"
   "version" "3.0.3"
@@ -4798,17 +4803,17 @@
     "istanbul-reports" "^3.0.2"
     "minimatch" "^3.0.4"
 
-"karma-jasmine-html-reporter@^1.5.0":
-  "integrity" "sha512-PtilRLno5O6wH3lDihRnz0Ba8oSn0YUJqKjjux1peoYGwo0AQqrWRbdWk/RLzcGlb+onTyXAnHl6M+Hu3UxG/Q=="
-  "resolved" "https://registry.npmjs.org/karma-jasmine-html-reporter/-/karma-jasmine-html-reporter-1.5.4.tgz"
-  "version" "1.5.4"
+"karma-jasmine-html-reporter@^1.7.0":
+  "integrity" "sha512-pzum1TL7j90DTE86eFt48/s12hqwQuiD+e5aXx2Dc9wDEn2LfGq6RoAxEZZjFiN0RDSCOnosEKRZWxbQ+iMpQQ=="
+  "resolved" "https://registry.npmjs.org/karma-jasmine-html-reporter/-/karma-jasmine-html-reporter-1.7.0.tgz"
+  "version" "1.7.0"
 
-"karma-jasmine@>=1.1", "karma-jasmine@~3.3.0":
-  "integrity" "sha512-Nxh7eX9mOQMyK0VSsMxdod+bcqrR/ikrmEiWj5M6fwuQ7oI+YEF1FckaDsWfs6TIpULm9f0fTKMjF7XcrvWyqQ=="
-  "resolved" "https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-3.3.1.tgz"
-  "version" "3.3.1"
+"karma-jasmine@>=1.1", "karma-jasmine@~4.0.0":
+  "integrity" "sha512-h8XDAhTiZjJKzfkoO1laMH+zfNlra+dEQHUAjpn5JV1zCPtOIVWGQjLBrqhnzQa/hrU2XrZwSyBa6XjEBzfXzw=="
+  "resolved" "https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-4.0.1.tgz"
+  "version" "4.0.1"
   dependencies:
-    "jasmine-core" "^3.5.0"
+    "jasmine-core" "^3.6.0"
 
 "karma-source-map-support@1.4.0":
   "integrity" "sha512-RsBECncGO17KAoJCYXjv+ckIz+Ii9NCi+9enk+rq6XC81ezYkb4/RHE6CTXdA7IOJqoF3wcaLfVG0CPmE5ca6A=="
